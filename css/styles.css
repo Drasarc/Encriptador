@@ -1,0 +1,115 @@
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-position-y: -50px;
+    background-image: url("../img/fondo.jpeg");
+    background-size: cover;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    text-align: center;
+    font-size: 150px;
+    color: white;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    background-color: red;
+    line-height: 125px;
+    vertical-align: middle;
+    user-select: none;
+    border: 2px solid #000000;
+    -webkit-box-shadow: -15px 12px 0px 1px rgba(163, 26, 26, .5), 6px 12px 0px 1px rgba(245, 207, 81, .5);
+    -moz-box-shadow: -15px 12px 0px 1px rgba(163, 26, 26, .5), 6px 12px 0px 1px rgba(245, 207, 81, .5);
+    box-shadow: -15px 12px 0px 1px rgba(163, 26, 26, .5), 6px 12px 0px 1px rgba(245, 207, 81, .5);
+}
+
+.cajaMain {
+    width: 940px;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    background: linear-gradient(0deg, rgba(53, 21, 29, 1) 0%, rgba(93, 0, 0, 1) 5%, rgba(255, 0, 0, 1) 100%);
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    -webkit-box-shadow: -15px -1px 0px 1px rgba(163, 26, 26, .5), 6px -1px 0px 1px rgba(245, 207, 81, .5);
+    -moz-box-shadow: -15px -1px 0px 1px rgba(163, 26, 26, .5), 6px -1px 0px 1px rgba(245, 207, 81, .5);
+    box-shadow: -15px -1px 0px 1px rgba(163, 26, 26, .5), 6px 0px -1px 1px rgba(245, 207, 81, .5);
+}
+
+.textoIngreso,
+.textoResultado {
+    display: inline-block;
+    text-align: center;
+    height: 80%;
+    vertical-align: top;
+    margin: 0 1.3%;
+    margin-top: 3.5em;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    resize: none;
+    -webkit-box-shadow: 10px 10px 11px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 11px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 11px -5px rgba(0, 0, 0, 0.75);
+}
+
+.textoIngreso {
+    width: 64%;
+}
+
+.textoResultado {
+    width: 30%;
+}
+
+button p {
+    font-size: 30px;
+    color: white;
+}
+
+button {
+    margin: 2em 1.5% 2em;
+    height: 50px;
+    width: 30%;
+    display: inline;
+    border: 2px solid #000000;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 10px 11px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 11px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 11px -5px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+.cifrar {
+    background: rgb(253, 29, 29);
+    background: linear-gradient(90deg, rgba(253, 29, 29, 1) 0%, rgba(252, 176, 69, 1) 72%);
+}
+
+.cifrar:hover {
+    background-color: black;
+}
+
+
+.descifrar {
+    background-color: #a31a1a;
+}
+
+.copy {
+    background-color: #a31a1a;
+}
+
+footer {
+    color: aliceblue;
+    background-color: rgb(53, 21, 29);
+    text-align: center;
+    padding: 40px;
+}

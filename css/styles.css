@@ -47,6 +47,7 @@ body {
 
 .textoIngreso,
 .textoResultado {
+    font-size: 30px;
     display: inline-block;
     text-align: center;
     height: 80%;

@@ -2,16 +2,17 @@ const campoIngreso = document.querySelector("#textoIngresado");
 const campoResultado = document.querySelector("#textoResultado");
 
 const matrizCifrado = [
-    ["e", "enter"],
-    ["i", "ines"],
     ["a", "ai"],
+    ["e", "enter"],
+    ["i", "imes"],
     ["o", "ober"],
     ["u", "ufat"],
 ];
 
 campoIngreso.addEventListener("input", () => {
-    campoIngreso.value = campoIngreso.value.replace(/[^a-z0-9]/g, "");
+    campoIngreso.value = campoIngreso.value.replace(/[^a-z0-9\s]/g, "");
 });
+
 
 function BtnCifrar() {
     const texto = Cifrar(campoIngreso.value);
@@ -35,22 +36,23 @@ function BtnCopiar() {
 function Cifrar(fraseCifrada) {
     for (let i = 0; i < matrizCifrado.length; i++) {
         if (fraseCifrada.includes(matrizCifrado[i][0])) {
-            fraseCifrada = fraseCifrada.replace(
+            fraseCifrada = fraseCifrada.replaceAll(
                 matrizCifrado[i][0],
                 matrizCifrado[i][1]
-            );
+            )
         }
     }
     return fraseCifrada;
 };
 
 function Descifrar(fraseDescifrada) {
-    for (let i = 0; i < matrizCifrado.length; i++) {
-        if (fraseDescifrada.includes(matrizCifrado[i][0])) {
-            fraseDescifrada = fraseDescifrada.replace(
-                matrizCifrado[i][1],
-                matrizCifrado[i][0]
-            );
+    const matrizDescifrado = [...matrizCifrado].reverse();
+    for (let i = 0; i < matrizDescifrado.length; i++) {
+        if (fraseDescifrada.includes(matrizDescifrado[i][0])) {
+            fraseDescifrada = fraseDescifrada.replaceAll(
+                matrizDescifrado[i][1],
+                matrizDescifrado[i][0]
+            )
         }
     }
     return fraseDescifrada;
